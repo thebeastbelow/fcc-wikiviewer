@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Wikipedia Viewer</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div id="main" class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-12">
+          <h1 class="text-center">Wikipedia Viewer</h1>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-12">
+          <div class="input-group">
+            <input id="userinput" type="text" class="form-control" autofocus>
+            <div class="input-group-append">
+              <button id="search" class="btn btn-outline-secondary" type="button">search</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-12">
+          <a id="random" class="btn btn-block btn-outline-secondary" href="https://en.wikipedia.org/wiki/Special:Random" role="button">random</a>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-12">
+          <div id="spinner" class=" text-center d-none">
+            <i class="fas fa-spinner fa-2x fa-pulse"></i>
+          </div>
+          <div id="entries" class="list-group">
+            <a href="#" class="d-none list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">title</h5>
+                </div>
+                <p class="mb-1">snippet</p>
+                <small>click to read more...</small>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-12">
+          <footer class="text-center">
+            <p>
+              coded by <a target="_blank" href="https://github.com/thebeastbelow">enes gonultas</a><br />
+              by using <a target="_blank" href="http://getbootstrap.com/">bootstrap</a>,
+              <a target="_blank" href="http://jquery.com/">jquery</a><br>and
+              <a target="_blank" href="https://fontawesome.com/">font awesome</a>
+            </p>
+            <p>
+              background image by <a target="_blank" href="https://www.toptal.com/designers/subtlepatterns/japanese-sayagata/">olga libby</a>
+            </p>
+            <p>
+              source on <a target="_blank" href="https://github.com/thebeastbelow/fcc-wikiviewer">github</a>
+            </p>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
