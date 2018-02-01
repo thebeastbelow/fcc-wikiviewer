@@ -30,3 +30,7 @@ footer {
 #spinner {
   margin-top: 15px;
 }
+
+.searchmatch {
+  font-weight: bold;
+}
