@@ -1,5 +1,10 @@
 $(document).ready(function() {
   $("#search").click(search);
+  $("#userinput").keydown(function(event) {
+    if (event.which === 13) {
+      search();
+    }
+  });
 });
 
 function search() {
@@ -8,6 +13,7 @@ function search() {
     + "action=query&format=json&list=search&utf8=&srsearch="
     + encodeURIComponent(input));
   $("#spinner").removeClass("d-none");
+  $("#entries").addClass("d-none");
   $.ajax({
     url,
     dataType: "jsonp",
@@ -29,4 +35,5 @@ function createEntries(json) {
     instance.find("p").html(data[i].snippet + "...");
     entries.append(instance);
   }
+  entries.removeClass("d-none");
 }
